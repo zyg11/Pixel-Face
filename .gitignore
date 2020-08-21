@@ -1,0 +1,11 @@
+*.swp
+*.jpg
+*.png
+__pycache__/
+.DS_Store
+*.pyc
+*.npy
+*.pkl
+*.zip
+.vscode
+*.obj
