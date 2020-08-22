@@ -1,9 +1,12 @@
+"""
+If you find the visualized obj are all white, please run this code
+"""
+
 import os, sys, shutil
 
-
 def main():
-    in_file = "gt.obj"
-    out_file = "gt_new.obj"
+    in_file = "objs/gt.obj"
+    out_file = "objs/gt_new.obj"
 
     with open(in_file, "r") as in_f:
         with open(out_file, "w") as out_f:

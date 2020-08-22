@@ -1,4 +1,8 @@
+"""
+This code demonstrate how to read data
+"""
 import sys, os
+import os.path as osp
 import cv2
 import numpy as np
 import scipy.io as sio
@@ -47,7 +51,7 @@ def load_mat(data):
 
 
 def main():
-    gt_info = sio.loadmat('sample/fusion/gt.mat')   
+    gt_info = sio.loadmat('sample/mesh/fusion/gt.mat')   
     # load registration result
     registration = gt_info['neck_obj09']
     reg_v, reg_f, reg_tex, reg_kpt_ind = load_mat(registration)
@@ -56,8 +60,11 @@ def main():
     gt_v, gt_f, gt_tex, gt_kpt_ind = load_mat(gt)
       
     # save as obj
-    write_obj_with_colors('reg.obj', reg_v, reg_f, reg_tex, reg_kpt_ind)
-    write_obj_with_colors('gt.obj', gt_v, gt_f, gt_tex, gt_kpt_ind)
+    res_dir = "objs"
+    if not osp.exists(res_dir):
+        os.mkdir("objs")
+    write_obj_with_colors('objs/reg.obj', reg_v, reg_f, reg_tex, reg_kpt_ind)
+    write_obj_with_colors('objs/gt.obj', gt_v, gt_f, gt_tex, gt_kpt_ind)
 
     
 if __name__ == '__main__':

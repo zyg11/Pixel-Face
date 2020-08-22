@@ -5,10 +5,10 @@ We present a large-scale, high-resolution and diverse 3D face dataset, PixelFace
 The 3D landmarks, age and gender of the subjects are also included. The data have been released to public for non-commercial research purpose.
 
 ## Data Downloading  
-Dataset Infomation [OneDrive](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155102588_link_cuhk_edu_hk/EpYJzrzBa8FJvx1tZBbSp6IBvHTegO0FNwKzgnZfApCSng?e=FDmTcq), [Baidu Yun](https://pan.baidu.com/s/1U57o2vN8f8E8lfsFynRIjg) 
-(Password: tgwx)  
-Image & Mesh [OneDrive](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155102588_link_cuhk_edu_hk/EuZzVuao-V9KouJFEqDXFm4BRTsyYWm2kCKTHNyDoSHjAQ?e=zcBRas), [Baidu Yun](https://pan.baidu.com/s/1O-jO4GvsVYNRf4L5hdYi5g) (Password: ve0e)   
-Depth: Coming Soon
+Dataset Infomation [OneDrive](), [Baidu Yun]() 
+(Password:)  
+Image & Mesh [OneDrive](), [Baidu Yun]() (Password:)   
+Depth: [OneDrive](), [Baidu Yun]() (Password:)  
 ## Data Description
 The available data includes the following.
 ### 1. information
@@ -43,11 +43,16 @@ We provide Python3.6 code to extract facial landmarks and obj from the mat file.
 
 * Install basic requirements:
 
-	```
+```
 	pip install -r requirement.txt 
-	```
+```  
 
 * Run the following command will extract sample data from .mat and generate .obj files for face meshes. You can follow the same practice to extract other data after downloading.  
 ```
 	python util/read_data.py
 ```	
+
+* If you have problem in visualize the generated obj files. Please run the following command to convert the color space. It might be helpful.  
+```
+	python util/convert_obj.py
+```
