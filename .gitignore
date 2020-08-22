@@ -1,6 +1,4 @@
 *.swp
-*.jpg
-*.png
 __pycache__/
 .DS_Store
 *.pyc
