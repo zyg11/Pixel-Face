@@ -1,4 +1,4 @@
-# Pixel-Face Dataset
+# Pixel-Face Dataset  
 
 ##Introduction  
 We present a large-scale, high-resolution and diverse 3D face dataset, PixelFace, with massive annotations. PixelFace contains a training set with 655 subjects and a validation set with 200 subjects. Each subject has samples under different expressions and multiple views. Each sample provide synchronized multi-view 2D face image, depth(will release in the future), 3D scanning and registration results.There are 8483 samples totally.
