@@ -7,7 +7,7 @@ The 3D landmarks, age and gender of the subjects are also included. The data hav
 
 
 ## Data Downloading  
-Please send emails to pixel.face.data@gmail with signed [agreement](agreement.docx) to obtain the download link and password. The whole dataset is about 50GB.     
+Please send emails to [pixel.face.data@gmail](pixel.face.data@gmail) with signed [agreement](agreement.docx) to obtain the download link and password. The whole dataset is about 50GB.     
 ## Data Description
 The available data includes the following.
 ### 1. information
