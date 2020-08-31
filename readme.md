@@ -8,7 +8,9 @@ The 3D landmarks, age and gender of the subjects are also included. The data hav
 
 ## Data Downloading  
 Please send emails to <pixel.face.data@gmail> with signed [agreement](agreement.docx) to obtain the download link and password. The whole dataset is about 50GB.  
-## Data Description
+
+
+## Data Description
 The available data includes the following.
 ### 1. information
 Download the **Dataset Information** to get folder **release_id/**  
@@ -54,4 +56,15 @@ We provide Python3.6 code to extract facial landmarks and obj from the mat file.
 * If you have problem in visualize the generated obj files. Please run the following command to convert the color space. It might be helpful.  
 ```
 	python util/convert_obj.py
+```
+
+## Citation
+
+```
+@article{pixelface,
+  title={Pixel-Face: A Large-Scale, High-Resolution Benchmark for 3D Face Reconstruction},
+  author={Zhang, Yunxuan and Rong, Yu and Liu, Ziwei and Cheng, Cheng},
+  journal= {arXiv preprint arXiv:2008.12444},
+  year={2020}
+}
 ```
